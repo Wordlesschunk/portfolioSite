@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+
+@media (min-width: 450px) {
+  #mobileISO {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  #desktopISO {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+
+/* General styles */
+html {
+  scroll-padding-top: 70px;
+}
+
+body {
+  margin: 0;
+  /*background-color: #212121;*/
+  background-color: #161616;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, li, i, b, textarea, input {
+  margin: 0;
+  font-family: "Open Sans";
+}
+
+@media (hover: hover) {
+  #header .nav a:hover {
+    color: #6ab04c;
+  }
+}
+
+#header .nav a.selected {
+  color: #6ab04c;
+}
+
+/* Section 0 */
+#section-0 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #121212;
+}
+
+#section-0 .text {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  z-index: 1;
+}
+
+#section-0 .text h1, #section-0 .text h2 {
+  font-weight: 800;
+  text-shadow: rgba(0, 0, 0, 0.75) -8px 5px;
+  color: white;
+  text-transform: uppercase;
+}
+
+#section-0 .text h1 {
+  font-size: 5.1vw;
+}
+
+#section-0 .text h2 {
+  font-size: 2.2vw;
+}
+
+#section-0 .fab {
+  margin-top: 10px;
+  text-decoration: none;
+  margin-left: 5px;
+  font-size: 0;
+}
+
+#section-0 .fab::before {
+  font-size: 30px;
+}
+
+#section-0 #github {
+  color: #F4CBB2;
+}
+
+#section-0 #twitter {
+  color: #1DA1F2;
+}
+
+#section-0 #discord-icon {
+  color: #ccc;
+}
+
+#section-0 .facts {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20%;
+  z-index: 1;
+  text-align: center;
+}
+
+#section-0 .facts .fact {
+  display: inline-block;
+  color: white;
+  width: 200px;
+  border-bottom: solid 2px #ad9b32;
+  margin: 0 10px;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+#section-0 .facts .fact i {
+  color: #F8EFBA;
+}
+
+.divisor {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: scaleX(-1);
+  filter: invert(10%);
+  min-width: 100vw;
+}
+
+ /* Contact */
+#contact {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #212121;
+}
+
+#contact h1 {
+  color: #f9ca24;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#contact a {
+  font-size: 40px;
+  margin: 0 5px;
+  position: relative;
+  text-decoration: none;
+}
+
+#contact a p {
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  transform: translateX(-50%);
+  font-size: 20px;
+  color: #f9ca24;
+  background-color: #333;
+  padding: 5px;
+  display: none;
+  border-radius: 5px;
+  font-weight: normal;
+  z-index: 5;
+}
+
+#contact a:hover p {
+  display: block;
+}
+
+#contact #discord-username, #contact #email-username {
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+#contact #discord {
+  color: #738ADB;
+  width: 40px;
+  font-size: 0;
+}
+
+#contact #discord::before {
+  font-size: 40px;
+}
+
+#contact #email {
+  color: #ddd;
+  font-size: 0;
+}
+
+#contact #email::before {
+  font-size: 40px;
+}
+
+#contact .disclaimer {
+  color: #ddd;
+  font-size: 14px;
+}
+
+#contact .mailalert {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+#contact .mailalert #mailmessage {
+  background: #080808;
+  border-radius: 5px;
+  color: white;
+  margin: 10px auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#contact .mailalert #mailmessage[success="1"] {
+  color: #27ae60;
+}
+
+#contact .mailalert #mailmessage[success="0"] {
+  color: #c0392b;
+}
+
+#contact #contactform {
+  display: flex;
+}
+
+#contact #contactform .left, #contact #contactform .right {
+  flex: 1;
+  margin: 10px;
+}
+
+#contact #contactform .right {
+  text-align: left;
+}
+
+#contact #contactform input {
+  display: block;
+  margin-left: auto;
+  width: 304px;
+  height: 30px;
+  border: none;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  padding: 0 10px;
+  text-align: left;
+  margin-right: 2px;
+  -webkit-appearance: none;
+  box-sizing: border-box
+}
+
+#contact #contactform .right input {
+  margin-left: 0;
+}
+
+#contact #contactform .g-recaptcha {
+  margin-bottom: 10px;
+}
+
+#contact #contactform input[type=submit] {
+  text-align: center;
+}
+
+#contact #contactform input[type=submit]:hover {
+  cursor: pointer;
+}
+
+#contact #contactform textarea {
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+  height: 184px;
+  width: 400px;
+  color: white;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box
+}
+
+#contact #contactform input, #contact #contactform textarea {
+  border-bottom: solid 3px #111;
+}
+
+#contact #contactform .g-recaptcha > div {
+  margin-left: auto;
+}
+
+#contact #contactform.mobile {
+  display: none;
+}
+
+/* Footer */
+#footer {
+  background: #212121;
+  padding: 6px 0;
+  padding-left: 10px;
+  text-align: center;
+}
+
+#footer p, #footer a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #aaa;
+  font-size: 13px;
+}
+
+#footer a, #footer span {
+  color: #fad390;
+}
+
+
+body, 
+
+html {
+  width: 100%;
+  height: 100%; 
+  margin: 0; 
+  padding: 0; 
+  background-color: #212121
+}
+
+.row-container {
+  display: flex;
+  margin-top: 5%;
+  width: 100%; 
+  height: 50%; 
+  flex-direction: column; 
+  overflow: hidden;
+}
+
+.second-row { 
+  flex-grow: 1; 
+  border: none;
+  margin: 0; 
+  padding: 0; 
+}
+
+.button {
+  background-color: #c53535;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button-wrapper {
+  text-align: center;
+  margin-top: -2%;
+  margin-bottom: 6%;
+}
